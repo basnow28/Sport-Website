@@ -24,14 +24,14 @@ public class UserController {
         return userService.addUser(user);
     }
 
-    @GetMapping("/{team_id}") //profiles in the club (basic info - team, name, surname, email)
+   /* @GetMapping("/{team_id}") //profiles in the club (basic info - team, name, surname, email)
     public ResponseEntity<Map<String, Object>> getTeamMembers(
         @PathVariable("team_id") int teamId,
         @RequestParam(defaultValue = "userId,desc") String[] sort,
         @RequestParam(defaultValue = "0") int page,
         @RequestParam(defaultValue = "10") int size){
         return userService.getTeamMembers(teamId, sort, page, size);
-    }
+    }*/
 
     //Method updates activity with user status
     @PutMapping("/{user_id}/{activity_id}")

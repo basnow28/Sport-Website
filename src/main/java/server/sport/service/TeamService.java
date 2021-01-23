@@ -96,7 +96,7 @@ public class TeamService {
         return sort.equals("firstName") || sort.equals("lastName") || sort.equals("userId");
     }
 
-    public ResponseEntity<Map<String, Object>> getTeamMembers(int teamId, String[] sort, int page, int size){
+   /* public ResponseEntity<Map<String, Object>> getTeamMembers(int teamId, String[] sort, int page, int size){
         List<Sort.Order> orders= new ArrayList<>();
         if(sort[0].contains(",")){
             for(String sortOrders: sort){
@@ -131,5 +131,5 @@ public class TeamService {
         response.put("totalItems", pageUsers.getTotalElements());
         response.put("totalPages", pageUsers.getTotalPages());
         return new ResponseEntity<>(response, HttpStatus.OK);
-    }
+    }*/
 }

@@ -57,13 +57,13 @@ public class TeamController {
         return teamService.deleteUserFromTeam(teamId, userId);
     }
 
-    @GetMapping("/{team_id}/profiles") //profiles in the club (basic info - team, name, surname, email)
+ /*   @GetMapping("/{team_id}/profiles") //profiles in the club (basic info - team, name, surname, email)
     public ResponseEntity<Map<String, Object>> getTeamMembers(
             @PathVariable("team_id") int teamId,
             @RequestParam(defaultValue = "userId,desc") String[] sort,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size){
         return teamService.getTeamMembers(teamId, sort , page, size);
-    }
+    }*/
 }
 

@@ -18,7 +18,7 @@ public interface UserRepository extends JpaRepository<User, Integer> {
     @Query(value = "UPDATE dbo.users SET team_id = NULL WHERE user_id = ?1", nativeQuery = true)
     int removeFromTeam(int user_id);
 
-    Page<User> findAllByTeamTeamId(int teamId, Pageable paging);
+    //Page<User> findAllByTeamTeamId(int teamId, Pageable paging);
 
     List<User> findAllByTeamTeamId(int teamId);
 
